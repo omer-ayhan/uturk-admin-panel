@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://notetab-8de87.firebaseapp.com/",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "https://notetab-8de87.firebaseapp.com/auth",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -20,7 +20,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "node auth/server.js",
+    "start": "run-p start:**",
+    "start:app": "react-scripts start",
+    "start:server": "cd api && yarn start",
+    "now-build": "react-scripts build && mv build dist",
     "build": "set GENERATE_SOURCEMAP=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

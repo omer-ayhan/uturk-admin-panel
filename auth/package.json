@@ -5,13 +5,15 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "firebase-admin": "^9.11.1",
+    "firebase-admin": "^9.11.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.13"
   }
 }

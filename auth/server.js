@@ -1,16 +1,8 @@
 const express = require("express");
-const path = require("path");
 const app = express();
 const port = process.env.PORT || 5000;
 const admin = require("firebase-admin");
 const serviceAccount = require("../firebaseAdminKey.json");
-
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("../build/index.html"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "../build", "index.html"));
-  });
-}
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
