@@ -3,7 +3,8 @@ const serviceAccount = require("../firebaseAdminKey.json");
 if (!admin.apps.length) {
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://notetab-8de87.firebaseio.com",
+    databaseURL:
+      "https://uturk-admin-website-default-rtdb.europe-west1.firebasedatabase.app",
   });
 }
 

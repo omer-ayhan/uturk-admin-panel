@@ -4,14 +4,15 @@ import "firebase/compat/storage";
 import "firebase/compat/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBzpepcFS5peiGUQN6FOrX6QIvCAsNGY_w",
-  authDomain: "notetab-8de87.firebaseapp.com",
-  databaseURL: "https://notetab-8de87.firebaseio.com",
-  projectId: "notetab-8de87",
-  storageBucket: "notetab-8de87.appspot.com",
-  messagingSenderId: "733243458605",
-  appId: "1:733243458605:web:7cde8fbcb3569c3b1ce4a4",
-  measurementId: "G-S0CKFBH9GF",
+  apiKey: "AIzaSyBt_vc6vzQX3Z0Cm0uCEftsnYBLsAWHas8",
+  authDomain: "uturk-admin-website.firebaseapp.com",
+  databaseURL:
+    "https://uturk-admin-website-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "uturk-admin-website",
+  storageBucket: "uturk-admin-website.appspot.com",
+  messagingSenderId: "811350201672",
+  appId: "1:811350201672:web:2f1cf91a3bc137d4640f7d",
+  measurementId: "G-DENS4P5C9H",
 };
 
 const appMain = !firebase.apps.length
