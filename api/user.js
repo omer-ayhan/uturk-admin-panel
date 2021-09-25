@@ -1,11 +1,13 @@
 const admin = require("firebase-admin");
 const serviceAccount = require("../firebaseAdminKey.json");
-module.exports = (req, res) => {
+if (!admin.apps.length) {
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: "https://notetab-8de87.firebaseio.com",
   });
+}
 
+module.exports = (req, res) => {
   let anonNum = 0;
   return admin
     .auth()
