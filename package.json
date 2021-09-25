@@ -2,7 +2,6 @@
   "name": "uturk_admin_frontend",
   "version": "0.1.0",
   "homepage": ".",
-  "proxy": "https://uturk-admin-panel.vercel.app/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -10,7 +9,8 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
-    "firebase": "^9.0.2",
+    "firebase": "^9.1.0",
+    "firebase-admin": "^9.11.1",
     "material-ui-chip-input": "^1.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,13 +19,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "run-p start:**",
-    "start:app": "react-scripts start",
-    "start:server": "cd auth && npm start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "now-build": "CI='' react-scripts build && mv build dist",
-    "build": "CI='' set GENERATE_SOURCEMAP=false && react-scripts build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
