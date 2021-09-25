@@ -1,0 +1,85 @@
+#channelCard .channelItem {
+  position: relative;
+  padding: 30px;
+  width: 100%;
+  height: 160px;
+  background: rgba(191, 191, 191, 0.2);
+  border-radius: 8px;
+}
+
+#channelCard .channelItem .disabledScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(191, 191, 191, 0.43);
+  border-radius: 8px;
+  z-index: 100;
+}
+
+#channelCard .channelItem .logo_container {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 87px;
+  height: 27px;
+  background: rgba(179, 179, 179, 0.4);
+  border-radius: 16px;
+  z-index: 900;
+}
+#channelCard .channelItem .logo_live {
+  width: 40px;
+  height: 40px;
+}
+
+#channelCard .channelItem .logo_container span {
+  margin-left: -5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#channelCard .channelItem .teamsBox {
+  position: absolute;
+  padding: 0 20px 0 20px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  top: 61%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 65%;
+}
+
+#channelCard .channelItem .team-logo {
+  padding: 4px;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(131, 131, 131, 0.3);
+}
+#channelCard .channelItem .team-logo img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#channelCard .channelItem .teamsBox .team-status {
+  padding-bottom: 30px;
+}
+
+#channelCard .channelItem .teamsBox .team-status .start-time {
+  width: 75px;
+  border-radius: 40px;
+  background: #f02233;
+  color: #fff;
+}
