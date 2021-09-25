@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://notetab-8de87.firebaseapp.com/",
   "private": true,
-  "proxy": "https://notetab-8de87.firebaseapp.com/auth",
+  "proxy": "http://localhost:5000/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -22,11 +22,11 @@
   "scripts": {
     "start": "run-p start:**",
     "start:app": "react-scripts start",
-    "start:server": "cd api && yarn start",
-    "now-build": "react-scripts build && mv build dist",
-    "build": "set GENERATE_SOURCEMAP=false && react-scripts build",
+    "start:server": "cd auth && npm start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "now-build": "react-scripts build && mv build dist",
+    "build": "set GENERATE_SOURCEMAP=false && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
