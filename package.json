@@ -1,8 +1,7 @@
 {
   "name": "uturk_admin_frontend",
   "version": "0.1.0",
-  "homepage": "https://notetab-8de87.firebaseapp.com/",
-  "private": true,
+  "homepage": ".",
   "proxy": "http://localhost:5000/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -25,8 +24,8 @@
     "start:server": "cd auth && npm start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "now-build": "react-scripts build && mv build dist",
-    "build": "set GENERATE_SOURCEMAP=false && react-scripts build"
+    "now-build": "CI='' react-scripts build && mv build dist",
+    "build": "CI='' set GENERATE_SOURCEMAP=false && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
