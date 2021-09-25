@@ -28,7 +28,7 @@ function Settings() {
     if (num > 0) {
       setOpen(true);
       axios
-        .post(`http://localhost:5000/auth?num=${num}`)
+        .post(`https://uturk-admin-panel.vercel.app/auth?num=${num}`)
         .then((res) => {
           setOpen(false);
           setSnack(true);

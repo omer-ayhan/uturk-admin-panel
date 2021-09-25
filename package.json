@@ -2,7 +2,7 @@
   "name": "uturk_admin_frontend",
   "version": "0.1.0",
   "homepage": ".",
-  "proxy": "http://localhost:5000/",
+  "proxy": "https://uturk-admin-panel.vercel.app/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
