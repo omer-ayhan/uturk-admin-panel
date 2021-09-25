@@ -17,8 +17,7 @@ module.exports = (req, res) => {
       listUsersResult.users.forEach(function (userRecord) {
         if (userRecord.providerData.length === 0) {
           //this user is anonymous
-          console.log(userRecord); // do your delete here
-          ++anonNum;
+          anonNum++;
           admin
             .auth()
             .deleteUser(userRecord.uid)
